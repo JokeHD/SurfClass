@@ -1,0 +1,401 @@
+*{
+    font-family: 'Oswald', sans-serif;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(29, 45, 99);
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+
+}
+body{
+    background: white;
+}
+
+/* HEADER */
+.w50{
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 50%;
+    padding: 0px 10px;
+}
+.w50 a{
+    color: white;
+}
+.menu{
+    text-align: right;
+    padding-top: 10px;
+}
+.menu a{
+    font-size: 25px; 
+    color: white;
+    padding: 20px;
+}
+/* HEADER */
+
+/* BANNER */
+section.banner{
+    flex-wrap: wrap;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: wheat;
+    background-image: url(http://127.0.0.1:5500/surf/surf.png);
+    min-height: 500px;
+    align-items: stretch;
+    padding: 90px 0;
+}
+.banner h2{
+    padding-top: 50px;
+    padding-left: 20px;
+    color: black;
+    font-size: 90px;
+    padding-right: 200px;
+}
+.pesquisa{
+    margin-left: 20px;
+    margin-top: 20px;
+    max-height: 30px;
+}
+.pesquisa input{
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 35px;
+}
+.matricula{
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(231, 67, 38);
+    color: white;
+    font-size: 35px;
+    border: transparent;
+}
+/* BANNER */
+
+/* MID CONTAINER*/
+.mid{
+    color: rgb(31, 31, 31);
+    background: #f8f7f7;
+    padding-bottom: 50px;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+
+    /* align items - alinha vertical*/
+    /* justify-content - alinha horizontal */
+}
+/* MID CONTAINER*/
+
+/* MID PRIMEIRA COLUNA*/
+.imagem{
+    padding-top: 20px;
+    height: auto;
+    width: 50%;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.board img{
+    max-width: 750px;
+    padding: 20px 0 0 0;
+    align-items: center;
+    width: 80%;
+    margin-left: 5%;
+}
+.mapa img{
+    max-width: 600px;
+    border-radius: 5px;
+    margin-left: 10%;
+    padding: 20px 0 0 0;
+    align-items: center;
+    width: 70%;
+}
+.imagem h1{
+    font-size: 20px;
+    padding: 0px  20px 20px 10px;
+}
+.imagem h3{
+    font-size: 20px;
+    padding: 20px  20px 0px 10px;
+}
+.imagem h3 span{
+    font-size: 15px;
+}
+.imagem h4{
+    color: rgb(170, 170, 170);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 20px  20px 0px 10px;
+}
+.imagem h4 span{
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    font-size: 18px;
+}
+/* MID PRIMEIRA COLUNA*/
+
+/* MID SEGUNDA COLUNA*/
+.caracteristicas{
+    padding-left: 50;
+    height: auto;
+    font-size: 35px;
+    width: 50%;
+    max-width: 50%;
+    line-height: 100px;
+    font-weight: bold;
+}
+.caracteristicas h1{
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
+}
+.caracteristicas ul li{
+    list-style: none;
+    margin-top: 100px;
+    padding-left: 100px;
+    font-size: 50px;
+    text-align: start;
+}
+.caracteristicas h4{
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: start;
+    line-height: normal;
+    padding: 20px;
+}
+/* MID SEGUNDA COLUNA*/
+
+/* DIFERENCIAIS */
+section.diferenciais{
+    margin: 20px;
+    background: #f8f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.diferenciais h2,p {
+    text-align: center;
+    background: #e9e5e5;
+}
+.w33{
+    line-height: 70px;
+    font-size: 25px;
+    width: 33.3%;
+    padding:0 10px;
+}
+.ww .assine h2{
+    text-decoration: none;
+}
+.assine h2{
+    background-color: rgb(29, 45, 99);
+    color: white;
+    text-decoration-style: none;
+    text-decoration: none;
+}
+/* DIFERENCIAIS */
+
+/* TEXTO CONTATO */
+.textocontato{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+/* TEXTO CONTATO */
+
+/* CONTATO COLUNA 1 */
+.contato{
+    position: relative;
+    display: grid;
+    padding-top: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+.form input[type=text],
+.form input[type=email]{
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-left: 10px;
+    display: block;
+    margin-left: 30px;
+    max-width: 1000px;
+    width: 80%;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+.form textarea{
+    padding-left: 10px;
+    padding-top: 10px;
+    resize: none;
+    display: block;
+    border-radius: 15px;
+    margin-left: 30px;
+    font-size: 20px;
+    max-width: 1000px;
+    width: 80%;
+    height: 220px;
+}
+.form h2{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.form input[type=submit]{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+    border-radius: 15px;
+    margin: 10px 0 10px 30px;
+    font-size: 20px;
+    max-width: 1000px;
+    width: auto;
+    height: 50px;
+    text-align: start;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(29, 45, 99);
+  }
+/* CONTATO COLUNA 1 */
+
+/* CONTATO COLUNA 2 */
+.endereco{
+    grid-column: 2;
+}
+.detalhe{
+    width: 200px;
+    height: 2px;
+    background-color: rgb(202, 199, 199);
+    display: inline-block;
+    position: absolute;
+    right: 450px;
+    top: 250px;
+}
+.endereco h2{
+    padding-left: 200px;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.endereco p{
+    font-size: 19px;
+    padding-left: 200px;
+    text-align: start;
+    color: rgb(170, 170, 170);
+    background: none;
+}
+.endereco h3{
+    max-width: auto;
+    width: auto;
+    color: rgb(228, 66, 37);
+    padding-left: 200px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.email p{
+    color: rgb(170, 170, 170);
+    font-size: 19px;
+    text-align: start;
+    padding-left: 200px;
+    background: none;
+}
+footer{
+    border-top: rgb(29, 45, 99);
+    border-top-style: solid;
+    background-color: tomato;
+    height: 100px;
+    text-align: start;
+    padding: 30px 0 30px 10px;
+    width: 100%;
+}
+footer h3{
+    text-transform: uppercase;
+    text-align: end;
+    margin-right: 30px;
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: fit-content;
+        text-align: center;
+    }
+    .menu{
+        text-align: center;
+    }
+    .w33,.w50{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .banner{
+       align-items: center;
+    }
+    .mid{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .imagem{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .caracteristicas{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1500px){
+    header{
+        height: fit-content;
+        text-align: center;
+}
+@media screen and (max-width: 1539px){
+        header{
+            height: fit-content;
+            text-align: center;
+        }
+        .menu{
+            text-align: center;
+        }
+        .w33,.w50{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .banner{
+           align-items: center;
+        }
+        .mid{
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+        .imagem{
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+        .caracteristicas{
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+        .caracteristicas h4{
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+}
